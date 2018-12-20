@@ -1,0 +1,50 @@
+<van-dialog id="van-dialog" />
+
+<view class="container">
+
+  <view class="head">
+    <image src="{{item.item_image}}" />
+    <text class="name">{{item.name}}</text>
+    <text class="campus">{{item.campus}}</text>
+  </view>
+
+  <view class="sub-container">
+    <text class="headline">详情</text>
+    <view class="tag-container">
+      <van-tag round color="green" size="medium">{{item.location}}</van-tag>
+      <van-tag round color="blue" size="medium">{{item.date}}</van-tag>
+      <van-tag round color="purple" size="medium">{{item.name}}</van-tag>
+    </view>
+  </view>
+
+  <view class="sub-container">
+    <text class="headline">如何取得？</text>
+    <van-button 
+    custom-class="mine-button"
+    wx:if="{{!clickStatus}}"
+    round
+    size="large"
+    type="danger"
+    bind:click="onClick"
+    >这是我的！！！</van-button>
+  </view>
+
+  <van-cell-group wx:if="{{clickStatus}}">
+  <van-cell
+    wx:if="{{onLineValue!=''}}"
+    title="线上方式"
+    value="{{onLineValue}}"
+  />
+  <van-cell
+    wx:if="{{offLineValue!=''}}"
+    title="线下方式"
+    value="{{offLineValue}}"
+  />
+  <van-cell
+    wx:if="{{diyValue!=''}}"
+    title="自定义方式"
+    value="{{diyValue}}"
+  />
+</van-cell-group>
+
+</view>

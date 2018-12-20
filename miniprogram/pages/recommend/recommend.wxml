@@ -1,0 +1,23 @@
+<van-notify id="custom-selector" />
+<van-toast id="van-toast" />
+
+<view class="container">
+
+  <view class="header">
+    <image class="head-img" src="images/recommend.png"></image>
+    <view class="slider-container">
+      <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="不过滤"></van-tab>
+        <van-tab title="轻微"></van-tab>
+        <van-tab title="正常"></van-tab>
+        <van-tab title="严格"></van-tab>
+      </van-tabs>
+    </view>
+  </view>
+
+  <view class="items-container">
+    <block wx:key="{{itemName._id}}" wx:for="{{items}}" wx:for-item="itemName">
+      <van-item item="{{itemName}}" />
+    </block>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 240rpx;
+  height: 360rpx;
+  margin-top: 30rpx;
+  position: relative;
+  box-shadow: 2px 2px 3px #e3e3e3
+}
+
+.container image{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 2px;
+}
+
+.title{
+  font-size: 20rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+

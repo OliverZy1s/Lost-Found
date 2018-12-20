@@ -1,0 +1,56 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header image{
+  width: 106rpx;
+  height: 34rpx;
+  margin-top: 30rpx;
+}
+
+.slider-container{
+  display: flex;
+  flex-direction: column;
+  width: 650rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  border-top: 1px solid rgb(247, 231, 231);
+  border-bottom: 1px solid rgb(247, 231, 231);
+  margin-top: 20rpx;
+}
+
+.slider{
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.slider-container text{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.items-container{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 600rpx;
+  padding: 0 90rpx 0 90rpx;
+  margin-bottom: 360rpx;
+}
+
+.items-container van-item{
+  margin-top: 10rpx;
+}

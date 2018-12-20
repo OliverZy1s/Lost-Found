@@ -1,0 +1,51 @@
+.container{
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.first-tabs{
+  width: 100%;
+}
+
+.second-tabs{
+  margin-top: 10rpx;
+  width: 100%;
+}
+
+.picker{
+  width: 100%;
+}
+
+.title-class{
+  font-size: 28rpx;
+  color: #999;
+  font-weight: 500;
+}
+
+.image-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.upload-image{
+  width: 400rpx;
+  height: 400rpx;
+  margin-top: 60rpx;
+}
+
+.image-upload-button{
+  width: 650rpx !important;
+  margin-top: 60rpx !important;
+}
+
+.submit-button{
+  margin-top: 60rpx !important;
+  width: 620rpx !important;
+}

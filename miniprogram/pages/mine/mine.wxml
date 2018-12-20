@@ -1,0 +1,18 @@
+<view class="container">
+    <image src="images/bg.png" class="bg"></image>
+
+    <view class="avatar-container avatar-position">
+      <open-data class="avatar" type="userAvatarUrl"></open-data>
+      <open-data class="nickName" type="userNickName" ></open-data>
+      <text>学期期末可凭成就领取礼品噢~</text>
+    </view>
+
+    <image class="head-img" src="images/like.png"></image>
+
+    <view class="items-container">
+      <block wx:key="{{item._id}}" wx:for="{{achievements}}">
+        <van-achievement achievement="{{item}}" />
+    </block>
+    </view>
+
+</view>

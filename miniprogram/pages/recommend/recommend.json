@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-slider": "../../miniprogram_npm/vant-weapp/slider/index",
+    "van-item": "../../components/item/index",
+    "van-notify": "../../miniprogram_npm/vant-weapp/notify/index",
+    "van-tab": "../../miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
+    "van-toast": "../../miniprogram_npm/vant-weapp/toast/index"
+  }
+}

@@ -1,0 +1,59 @@
+.container{
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.head{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46rpx;
+}
+
+.head image{
+  width: 400rpx;
+  height: 400rpx;
+  box-shadow: 2px 2px 3px #e3e3e3;
+}
+
+.name{
+  font-size: 38rpx;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-top: 20rpx;
+}
+
+.campus{
+  font-size: 28rpx;
+  color: #999;
+}
+
+.sub-container{
+  width: 630rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 30rpx 60rpx 30rpx 60rpx;
+}
+
+.headline{
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 20rpx;
+}
+
+.tag-container{
+  width: 630rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mine-button{
+  width: 650rpx !important;
+  margin-top: 24rpx !important;
+}

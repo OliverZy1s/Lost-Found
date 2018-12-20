@@ -1,0 +1,77 @@
+<van-toast id="van-toast" />
+
+<view class="container">
+
+  <van-tabs class="first-tabs" active="{{ active }}" bind:change="onChange_level_1">
+    <van-tab title="我丢失了"></van-tab>
+    <van-tab title="我拾得了"></van-tab>
+  </van-tabs>
+  <van-tabs class="second-tabs" active="{{ active }}" bind:change="onChange_level_2">
+    <van-tab title="A区"></van-tab>
+    <van-tab title="B区"></van-tab>
+    <van-tab title="C区"></van-tab>
+    <van-tab title="D区"></van-tab>
+  </van-tabs>
+
+  <picker 
+    class="picker"
+    mode="multiSelector" 
+    bind:change="bindMultiPickerChange" 
+    bind:columnchange="bindMultiPickerColumnChange" 
+    value="{{multiIndex}}" 
+    range="{{multiArray}}">
+    <van-cell 
+    title="具体地点" 
+    title-class="title-class"
+    value="{{multiArray[0][multiIndex[0]]}}, {{multiArray[1][multiIndex[1]]}}, {{multiArray[2][multiIndex[2]]}}"  is-link />
+  </picker>
+
+  <picker 
+  class="picker"
+  mode="date" 
+  value="{{_date}}" 
+  start="2018-12-01" 
+  end="2019-12-31" 
+  bindchange="bindDateChange">
+  <van-cell title="时间" title-class="title-class" value="{{_date}}" is-link />
+  </picker>
+
+  <picker 
+  class="picker"
+  bindchange="bindPickerChange" 
+  value="{{index}}"
+  range="{{array}}">
+  <van-cell title="物品" title-class="title-class" value="{{array[index]}}" is-link />
+  </picker>
+
+  <view class="image-button-container">
+    <image 
+      class="upload-image"
+      wx:if="{{item.item_image}}" 
+      src="{{item.item_image}}">
+    </image>
+
+    <van-button 
+      custom-class="image-upload-button"
+      round plain
+      type="primary" 
+      size="large" 
+      bind:click="uploadImage">{{item.kind=='lost'?'上传图片（可选）':'上传图片（必填）'}}        </van-button>
+
+    <!-- <form bindsubmit="submit" report-submit='true' >
+    <button form-type="submit" type="default" size="mini">提交</button>
+    </form> -->
+
+    <!-- <form bindsubmit="submit" report-submit='{{reportSubmit}}'> -->
+      <van-button 
+      custom-class="submit-button"
+      type="primary" 
+      size="normal" 
+      bind:click="onSubmit">提交</van-button>
+    <!-- </form> -->
+
+  </view>
+
+</view >
+
+

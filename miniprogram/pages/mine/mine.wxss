@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg {
+    width: 750rpx;
+    height: 524rpx;
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-position {
+    position: absolute;
+    top: 255rpx;
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nickName{
+  font-size: 32rpx;
+}
+
+.avatar-container text{
+  font-size: 28rpx;
+  font-weight: 300;
+  font-family: FangSong;
+  color: #271e1e;
+  margin-top: 30rpx;
+}
+
+.head-img{
+  width: 97rpx;
+  height: 42rpx;
+  margin-top: 24rpx;
+}

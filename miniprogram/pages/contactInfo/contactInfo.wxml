@@ -1,0 +1,88 @@
+<view class="container">
+
+<text>登记失主寻找方式</text>
+
+<van-checkbox-group class="checkBox-group" value="{{ result }}">
+
+    <van-cell
+      custom-class="cell-first"
+      title="线上"
+      clickable
+      data-name="{{ list[0] }}"
+      bind:click="toggle"
+
+    >
+    <van-checkbox class="checkboxes-{{ list[0] }}" name="{{ list[0] }}" />
+    </van-cell> 
+
+
+  <van-cell-group>
+    <van-field
+      wx:if="{{status[0]}}"
+      value="{{ value }}"
+      placeholder="如 QQ: 12345678"
+      label="联系方式"
+      required="true"
+      bind:change="onChange_onLine"
+    />
+  </van-cell-group>
+
+
+    <van-cell
+      title="线下"
+      clickable
+      data-name="{{ list[1] }}"
+      bind:click="toggle"
+    >
+    <van-checkbox class="checkboxes-{{ list[1] }}" name="{{ list[1] }}" />
+    </van-cell>
+
+
+  <picker 
+  wx:if="{{status[1]}}"
+  mode="multiSelector" 
+  bind:change="bindMultiPickerChange" 
+  bind:columnchange="bindMultiPickerColumnChange" 
+  value="{{multiIndex}}" 
+  range="{{multiArray}}">
+  <van-cell 
+  required="true" 
+  title="失物招领处" 
+  value="{{multiArray[0][multiIndex[0]]}}, {{multiArray[1][multiIndex[1]]}}, {{multiArray[2][multiIndex[2]]}}"  
+  is-link />
+  </picker>
+
+
+    <van-cell
+      title="自定义"
+      clickable
+      data-name="{{ list[2] }}"
+      bind:click="toggle"
+      border="{{ false }}"
+    >
+    <van-checkbox class="checkboxes-{{ list[2] }}" name="{{ list[2] }}" />
+    </van-cell>
+
+
+  <van-cell-group>
+    <van-field
+    
+      wx:if="{{status[2]}}"
+      value="{{ value }}"
+      placeholder="如：一教 D1234讲台上自取"
+      label="自定义地点"
+      required="true"
+      bind:change="onChange_diy"
+    />
+  </van-cell-group>
+</van-checkbox-group>
+
+<van-button 
+custom-class="submit-button"
+plain type="primary" 
+size="large" 
+bind:click="onSubmit">提交</van-button>
+
+<!-- <van-popup show="{{ show }}" bind:close="onClose">提交成功！</van-popup> -->
+
+</view>

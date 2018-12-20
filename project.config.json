@@ -1,0 +1,67 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true
+	},
+	"appid": "wxb2cd84131aedad75",
+	"projectname": "lost_found_4",
+	"libVersion": "2.2.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "imageProcess",
+					"pathName": "pages/landing/landing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "recommend",
+					"pathName": "pages/recommend/recommend",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "contactInfo",
+					"pathName": "pages/contactInfo/contactInfo",
+					"query": "_id='XBZV73ffS3SWC56U'"
+				},
+				{
+					"id": 3,
+					"name": "itemDetails",
+					"pathName": "pages/itemDetails/itemDetails",
+					"query": "_id=XBevAd7E7L4wt-dR"
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				}
+			]
+		}
+	}
+}

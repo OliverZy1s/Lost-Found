@@ -1,0 +1,8 @@
+<view bind:tap="onTap" class="container">
+  <image src="{{item.item_image}}" />
+  <view class="description">
+    <text class="location">{{item.date}}</text>
+    <text class="date">{{item.location}}</text>
+    <text class="name">{{item.name}}</text>  
+  </view>
+</view>

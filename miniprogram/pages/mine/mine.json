@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-achievement": "../../components/achievement/index"
+  }
+}
