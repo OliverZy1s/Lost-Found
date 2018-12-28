@@ -44,3 +44,19 @@
   height: 42rpx;
   margin-top: 24rpx;
 }
+
+.items-container{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 600rpx;
+  padding: 0 90rpx 0 90rpx;
+  margin-bottom: 360rpx;
+}
+
+.achievements-text{
+  margin-top: 16rpx;
+  font-family: KaiTi;
+}

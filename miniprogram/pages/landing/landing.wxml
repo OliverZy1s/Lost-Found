@@ -1,4 +1,5 @@
 <van-toast id="van-toast" />
+<van-dialog id="van-dialog" />
 
 <view class="container">
 
@@ -13,6 +14,8 @@
     <van-tab title="D区"></van-tab>
   </van-tabs>
 
+  <van-cell-group custom-class="cell-group">
+
   <picker 
     class="picker"
     mode="multiSelector" 
@@ -21,9 +24,9 @@
     value="{{multiIndex}}" 
     range="{{multiArray}}">
     <van-cell 
-    title="具体地点" 
+    title="地点" 
     title-class="title-class"
-    value="{{multiArray[0][multiIndex[0]]}}, {{multiArray[1][multiIndex[1]]}}, {{multiArray[2][multiIndex[2]]}}"  is-link />
+    value="{{multiArray[0][multiIndex[0]]}}, {{multiArray[1][multiIndex[1]]}}"  is-link />
   </picker>
 
   <picker 
@@ -44,6 +47,16 @@
   <van-cell title="物品" title-class="title-class" value="{{array[index]}}" is-link />
   </picker>
 
+  <van-field
+    bind:change="onChange_supply"
+    value="{{ message }}"
+    label="补充信息"
+    placeholder="如：在D1314拾得/手机型号为iPhoneX"
+  />
+
+  </van-cell-group>
+
+
   <view class="image-button-container">
     <image 
       class="upload-image"
@@ -58,17 +71,19 @@
       size="large" 
       bind:click="uploadImage">{{item.kind=='lost'?'上传图片（可选）':'上传图片（必填）'}}        </van-button>
 
-    <!-- <form bindsubmit="submit" report-submit='true' >
-    <button form-type="submit" type="default" size="mini">提交</button>
-    </form> -->
-
-    <!-- <form bindsubmit="submit" report-submit='{{reportSubmit}}'> -->
-      <van-button 
+    <van-button 
       custom-class="submit-button"
       type="primary" 
-      size="normal" 
-      bind:click="onSubmit">提交</van-button>
-    <!-- </form> -->
+      size="large" 
+      bind:click="onSubmit">提交       
+    </van-button>
+
+    <!-- <form bindsubmit="onSubmit" report-submit='true'>
+        <button 
+        form-type="submit" 
+        type="default">
+        提交</button>
+    </form> -->
 
   </view>
 

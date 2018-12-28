@@ -1,4 +1,4 @@
 <view class="container">
   <image src="{{achievement.achievement_image}}" />
-  <text class="title">{{achievement.title}}</text>  
+  <text class="title">{{achievement.achievement_title}}</text>  
 </view>

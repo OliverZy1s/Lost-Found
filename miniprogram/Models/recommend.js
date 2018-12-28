@@ -1,13 +1,14 @@
 
 
 class Recommend{
-  silderFilter(name, filter, item_id){
+  silderFilter(name, filter, item_id, pageIndex){
     return new Promise((resolve, reject) => {
       wx.cloud.callFunction({
         name: name,
         data: {
           filter: filter,
-          item_id: item_id
+          item_id: item_id,
+          pageIndex: pageIndex
         },
         success: res => {
           resolve(res.result.data)

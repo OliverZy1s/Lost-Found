@@ -238,8 +238,8 @@ Page({
     cloud.update_doc_getMethod('items_found', this.data._id, getMethod)
 
     setTimeout(function () {
-      wx.redirectTo({
-        url: '../landing/landing',
+      wx.switchTab({
+        url: `../mine/mine`,
       })
     }, 1000)
   },

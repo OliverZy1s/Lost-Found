@@ -1,25 +1,29 @@
 .container{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 240rpx;
-  height: 360rpx;
+  height: 300rpx;
   margin-top: 30rpx;
   position: relative;
-  box-shadow: 2px 2px 3px #e3e3e3
+  box-shadow: 0 0 4px 2px #e3e3e3
 }
 
 .container image{
   width: 240rpx;
   height: 240rpx;
   border-radius: 2px;
+  box-shadow: 0 0 1px 1px #e3e3e3
 }
 
 .title{
-  font-size: 20rpx;
-  color: #999999;
-  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #5d5b5e;
+  font-family: YouYuan;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 14rpx;
 }
 

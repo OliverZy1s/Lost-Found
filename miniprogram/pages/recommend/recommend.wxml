@@ -1,10 +1,21 @@
 <van-notify id="custom-selector" />
 <van-toast id="van-toast" />
+<van-dialog id="van-dialog" />
+
+  <form bindsubmit="onMessage" report-submit='true'>
+    <button 
+    class="message-button"
+    size="mini"
+    form-type="submit" 
+    type="warn">
+    没有结果？</button>
+  </form>
 
 <view class="container">
 
   <view class="header">
     <image class="head-img" src="images/recommend.png"></image>
+    
     <view class="slider-container">
       <van-tabs active="{{ active }}" bind:change="onChange">
         <van-tab title="不过滤"></van-tab>
@@ -20,4 +31,14 @@
       <van-item item="{{itemName}}" />
     </block>
   </view>
+
+  <view wx:if="{{upScrollLoading}}" class="upScrollLoading">
+    <van-loading type="spinner" size="26px"/>
+    <text>加载中</text>
+  </view>
+
+  <view wx:if="{{upScrollLoading_nomore}}" class="upScrollLoading_nomore">
+    <text>没有更多</text>
+  </view>
+ 
 </view>

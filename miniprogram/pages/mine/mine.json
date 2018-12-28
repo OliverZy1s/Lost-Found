@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "van-achievement": "../../components/achievement/index"
-  }
+    "van-achievement": "../../components/achievement/index",
+    "van-toast": "../../miniprogram_npm/vant-weapp/toast/index"
+  },
+  "enablePullDownRefresh": true
 }

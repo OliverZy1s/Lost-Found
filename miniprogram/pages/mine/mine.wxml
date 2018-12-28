@@ -1,3 +1,5 @@
+<van-toast id="van-toast" />
+
 <view class="container">
     <image src="images/bg.png" class="bg"></image>
 
@@ -7,11 +9,11 @@
       <text>学期期末可凭成就领取礼品噢~</text>
     </view>
 
-    <image class="head-img" src="images/like.png"></image>
+    <text class="achievements-text">成就</text>
 
     <view class="items-container">
       <block wx:key="{{item._id}}" wx:for="{{achievements}}">
-        <van-achievement achievement="{{item}}" />
+        <van-achievement achievement="{{item}}"/>
     </block>
     </view>
 

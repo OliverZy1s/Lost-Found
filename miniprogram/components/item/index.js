@@ -32,10 +32,10 @@ Component({
   methods: {
     onTap: function(){
   
-      const _id = this.data.item._id
-      console.log(_id)
+      const item_id = this.data.item._id
+
       wx.navigateTo({
-        url: `../../pages/itemDetails/itemDetails?_id=${_id}`,
+        url: `../../pages/itemDetails/itemDetails?item_id=${item_id}`,
       })
     }
   }

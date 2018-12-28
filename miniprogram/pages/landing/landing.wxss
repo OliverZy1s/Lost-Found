@@ -22,7 +22,7 @@
 
 .title-class{
   font-size: 28rpx;
-  color: #999;
+  color: rgb(43, 42, 42);
   font-weight: 500;
 }
 
@@ -48,4 +48,12 @@
 .submit-button{
   margin-top: 60rpx !important;
   width: 620rpx !important;
+}
+
+/* .supply-info{
+  width: rpx;
+} */
+
+.cell-group{
+  width: 750rpx;
 }

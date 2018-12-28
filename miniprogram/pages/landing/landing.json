@@ -5,6 +5,8 @@
     "van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
     "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
     "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
-    "van-toast": "../../miniprogram_npm/vant-weapp/toast/index"
+    "van-toast": "../../miniprogram_npm/vant-weapp/toast/index",
+    "van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+    "van-field": "../../miniprogram_npm/vant-weapp/field/index"
   }
 }

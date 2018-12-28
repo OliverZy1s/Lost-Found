@@ -4,7 +4,7 @@ from '../../we-cropper/we-cropper.js'
 
 const device = wx.getSystemInfoSync()
 const width = device.windowWidth
-const height = device.windowHeight - 50
+const height = device.windowHeight + 5
 
 Page({
 

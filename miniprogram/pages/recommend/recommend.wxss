@@ -16,7 +16,7 @@
 .header image{
   width: 106rpx;
   height: 34rpx;
-  margin-top: 30rpx;
+  margin-top: 42rpx;
 }
 
 .slider-container{
@@ -27,7 +27,7 @@
   padding-right: 50rpx;
   border-top: 1px solid rgb(247, 231, 231);
   border-bottom: 1px solid rgb(247, 231, 231);
-  margin-top: 20rpx;
+  margin-top: 35rpx;
 }
 
 .slider{
@@ -53,4 +53,35 @@
 
 .items-container van-item{
   margin-top: 10rpx;
+}
+
+
+.message-button{
+  position: fixed;
+  z-index: 99;
+  right: 24rpx;
+  top: 26rpx;
+}
+
+.upScrollLoading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.upScrollLoading text{
+  font-size: 36rpx;
+  font-family: SimSun;
+  font-weight: 600;
+  color: rgb(124, 112, 112);
+  margin-left: 10rpx;
+}
+
+.upScrollLoading_nomore text{
+  font-size: 36rpx;
+  font-family: SimSun;
+  font-weight: 600;
+  color: rgb(124, 112, 112);
+  padding-bottom: 24rpx;
 }
